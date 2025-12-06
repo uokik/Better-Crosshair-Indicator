@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "bettercrosshairindicator",
+  "version": "${version}",
+  "name": "BetterCrosshairIndicator",
+  "description": "This mod causes your crosshair to display differently when you can swing at a Player's Hitbox but better",
+  "authors": ["szok"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "textures/icon/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.szokk.bettercrosshairindicator.client.MainClient"
+    ],
+    "main": [
+      "net.szokk.bettercrosshairindicator.Main"
+    ]
+  },
+  "mixins": [
+    "bettercrosshairindicator.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
